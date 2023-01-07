@@ -120,20 +120,23 @@ img {
   transition: var(--transition);
 }
 
-.current {
-  color: var(--brand-text-color);
+a.current {
   position: relative;
+  color: var(--brand-text-color);
 }
 
-.current::after {
-  contain: "";
-  display: block;
+a.current::after {
+  content: '';
+
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -28px;
+
+  display: block;
   width: 100%;
   height: 4px;
   background-color: var(--brand-text-color);
+  
 }
 
 .site-nav,
@@ -227,7 +230,8 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(46, 47, 66, 0.4);;
+background-color: rgba(46, 47, 66, 0.4);
+transition: visibility 500ms, opacity 500ms;
 }
 
 .backdrop.is-hidden {
@@ -250,6 +254,22 @@ background-color: rgba(46, 47, 66, 0.4);;
   0px 1px 3px rgba(0, 0, 0, 0.12), 
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transition: visibility 500ms, opacity 500ms;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border:  1px solid rgba(0, 0, 0, 0.1); ;
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  transition: visibility 500ms, opacity 500ms;
 }
 
 /* ==Benefit Section== */
