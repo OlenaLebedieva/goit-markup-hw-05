@@ -112,12 +112,13 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  transition: color var(--transition);
 }
 
 .link-nav:hover,
 .link-nav:focus {
   color: var(--brand-text-color);
-  transition: var(--transition);
 }
 
 a.current {
@@ -136,7 +137,6 @@ a.current::after {
   width: 100%;
   height: 4px;
   background-color: var(--brand-text-color);
-  
 }
 
 .site-nav,
@@ -156,12 +156,13 @@ a.current::after {
   font-size: 16px;
   line-height: 1.5;
   margin-left: 40px;
+
+  transition: color var(--transition);
 }
 
 .link-contact:hover,
 .link-contact:focus {
   color: var(--brand-text-color);
-  transition: var(--transition);
 }
 
 /* ===MAIN=== */
@@ -180,8 +181,7 @@ a.current::after {
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../Images/hero/people-office\ 1.jpg);
   padding-top: 192px;
   padding-bottom: 292px;
@@ -214,13 +214,13 @@ a.current::after {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
+
+  transition: background-color var(--transition);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--accent-text-color);
   background-color: var(--button-accent-color);
-  transition: var(--transition);
 }
 
 /* == Modal Window == */
@@ -436,12 +436,12 @@ transition: visibility 500ms, opacity 500ms;
   background-size: contain;
   background-color: var(--brand-text-color);
   border-radius: 50%;
+  transition: background-color var(--transition);
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--button-accent-color);
-  transition: var(--transition);
 }
 
 /* ===Client==== */
@@ -476,12 +476,14 @@ transition: visibility 500ms, opacity 500ms;
   border: 1px solid var(--current-color-clients);
   border-radius: 4px;
   color: var(--current-color-clients);
+  transition: border-color var(--transition);
 }
 
 .clien-icon {
   width: 104px;
   height: 56px;
   fill: currentColor;
+  transition: color var(--transition);
 }
 
 .client-item-link:hover,
@@ -490,7 +492,6 @@ transition: visibility 500ms, opacity 500ms;
 .client-icon:focus {
   border-color: var(--button-accent-color);
   color: var(--button-accent-color);
-  transition: var(--transition);
 }
 
 /*=== Footer=== */
@@ -564,12 +565,12 @@ transition: visibility 500ms, opacity 500ms;
   background-size: contain;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: color var(--transition);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: rgba(49, 208, 170, 1);
-  transition: var(--transition);
 }
 
 /*======PORTFOLIO===== */
@@ -599,6 +600,10 @@ transition: visibility 500ms, opacity 500ms;
   border: 1px solid;
   border-color: var(--accent-text-color);
   padding: 8px 16px;
+  transition: color var(--transition);
+  transition: border-color var(--transition);
+  transition: background-color var(--transition);
+  transition: box-shadow var(--transition);
 }
 
 .filters-list .button:hover,
@@ -608,7 +613,6 @@ transition: visibility 500ms, opacity 500ms;
   border-color: var(--brand-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--transition);
 }
 
 /* ==Progects== */
@@ -652,20 +656,18 @@ transition: visibility 500ms, opacity 500ms;
 .progect-link {
   display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  transition: var(--transition);
+  transition: box-shadow var(--transition);
 }
 
 .progect-link:hover,
 .progect-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: var(--transition);
 }
 
 .progect-link:hover .overlay-thumb,
 .progect-link:focus .overlay-thumb {
   transform: translateY(0);
-  transition: var(--transition);
 }
 
 .progect-description {
